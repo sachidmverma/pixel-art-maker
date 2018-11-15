@@ -1,10 +1,10 @@
 /**defining the variables by selecting the DOM elements that the user will interact with*/
 /*When size is submitted by the user, call makeGrid()*/
 
-let canvas = document.getElementById("pixel_canvas");
+let canvas = document.getElementById("pixelCanvas");
 let color = document.getElementById("colorPicker");
-let height = document.getElementById("input_height");
-let width = document.getElementById("input_width");
+let height = document.getElementById("inputHeight");
+let width = document.getElementById("inputWidth");
 let sizePicker = document.getElementById("sizePicker");
 
 sizePicker.onsubmit = function(event) {
@@ -14,7 +14,6 @@ sizePicker.onsubmit = function(event) {
 };
 
 function makeGrid() {
-// Your code goes here!
 /*loop over each row and cell*/
 /*event listeners added to the grid squares*/
     for (let h = 0; h <height.value; h++) {
@@ -34,5 +33,5 @@ function clearGrid() {
 }
 /*fill the square with the color the user selects*/
 function fillSquare () {
-    element.style.backgroundColor = "color.value";
+    event.target.style.backgroundColor = color.value;
 }
